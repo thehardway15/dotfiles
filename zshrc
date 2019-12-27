@@ -37,6 +37,8 @@ bindkey "^[[B" down-line-or-beginning-search # Down
 autoload edit-command-line; zle -N edit-command-line
 bindkey -M vicmd "^V" edit-command-line
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 bindkey "^G" fzf-cd-widget
 
 source ~/.aliases
@@ -103,3 +105,7 @@ fco() {
     fzf-tmux -d30 -- --no-hscroll --ansi +m -d "\t" -n 2) || return
   git checkout $(echo "$target" | awk '{print $2}')
 }
+
+fpath=(/usr/local/share/zsh-completions $fpath)
+autoload -Uz compinit
+compinit -u
