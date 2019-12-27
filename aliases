@@ -17,3 +17,14 @@ alias ...='cd ../.. && ls'
 alias ,='cd'
 alias ,,='cd ..'
 alias ,,,='cd ../..'
+
+# Vagrant
+alias vu='vagrant up'
+alias vs='vagrant status'
+alias vus='vagrant up && vagrant ssh'
+alias vss='vagrant suspend'
+alias vh='vagrant halt'
+
+
+# SSH
+alias ssh="cat ~/.ssh/config.d/* > ~/.ssh/config; ssh"
