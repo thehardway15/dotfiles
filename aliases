@@ -1,0 +1,19 @@
+# LS Stuff
+alias ll='ls -la'
+alias ld='ls -d */'
+alias la='ls -CA'
+alias l='ls'
+
+# GIT Stuff
+alias gs='git status'
+alias gc='git commit -m'
+alias ga='git add -p'
+alias gaa='git add .'
+
+# CD Stuff
+alias .='cd && ls'
+alias ..='cd .. && ls'
+alias ...='cd ../.. && ls'
+alias ,='cd'
+alias ,,='cd ..'
+alias ,,,='cd ../..'

@@ -1,0 +1,25 @@
+[user]
+	name = Damian Wiśniewski
+	email = dev@thehardway.pl
+[core]
+	excludesfile = ~/.gitignore_global
+	autocrlf = input
+	editor = vim
+[hooks "ctags"]
+    	enabled = false
+[http]
+   	sslVerify = false
+[diff]
+        tool = vimdiff
+[merge]
+	tool = vimdiff
+[init]
+	templatedir = ~/.git_template/template
+[push]
+    	default = current
+[branch]
+    	autosetuprebase = always
+[alias]
+	afterfeature = !git checkout master && git pull && git fetch -p && git branch --merged
+[help]
+	autocorrect = 30
