@@ -55,16 +55,6 @@ if _has fzf && _has ag; then
   "
 fi
 
-fzf-vim-widget() {
-    local fname="$(__fsel)"
-    local fname_no_whitespace="$(echo -e "${fname}" | tr -d '[:space:]')"
-    vim "$fname_no_whitespace"
-}
-
-zle     -N   fzf-vim-widget
-bindkey '^V' fzf-vim-widget
-
-
 # fbr - checkout git branch
 fbr() {
   local branches branch
